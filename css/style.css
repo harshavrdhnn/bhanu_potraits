@@ -1,47 +1,52 @@
 /* ==========================================================================
-   BHANU PORTRAITS - LUXURY STUDIO STYLESHEET
-   Mobile-First, Responsive, High-Performance & Aesthetic Design System
+   BHANU PORTRAITS - MODERN VIBRANT LUXURY PHOTOGRAPHY STYLESHEET
+   Clean, Rich, Colorful & High-Contrast (No drab black, no muddy tones)
+   Mobile-First, Responsive, Fast & Smooth Rendering
    ========================================================================== */
 
 :root {
-  /* Color Palette */
-  --bg-main: #090a0f;
-  --bg-surface: #10121a;
-  --bg-card: #151824;
-  --bg-card-hover: #1c2030;
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(212, 175, 55, 0.35);
-  --border-gold-strong: #d4af37;
+  /* Vibrant & Rich Color Palette */
+  --bg-main: #0B0E14;            /* Deep Midnight Blue-Black (rich & punchy) */
+  --bg-surface: #121824;         /* Rich Royal Navy */
+  --bg-card: #182030;            /* Vibrant elevated card */
+  --bg-card-hover: #202B40;
+  
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-gold: #FFB800;        /* Vivid Golden Yellow */
+  --border-accent: #E11D48;      /* Vibrant Rose / Festive Crimson */
 
-  /* Gold & Metallic Accents */
-  --gold-primary: #d4af37;
-  --gold-light: #f5df88;
-  --gold-dark: #a17f22;
-  --gold-gradient: linear-gradient(135deg, #fceda2 0%, #d4af37 50%, #96741b 100%);
-  --gold-glow: rgba(212, 175, 55, 0.25);
-  --emerald-accent: #0f766e;
-  --whatsapp-green: #25d366;
-  --whatsapp-hover: #1eb956;
+  /* Vibrant Accents */
+  --gold-primary: #FFB800;
+  --gold-light: #FFD54F;
+  --gold-gradient: linear-gradient(135deg, #FFD54F 0%, #FFB800 50%, #FF9100 100%);
+  
+  --festive-rose: #E11D48;       /* Joyous Wedding Rose */
+  --festive-orange: #FF6B00;     /* Vibrant Marigold / Haldi */
+  --festive-gradient: linear-gradient(135deg, #E11D48 0%, #FF6B00 100%);
+  
+  --emerald-accent: #10B981;     /* Vivid Emerald */
+  --whatsapp-green: #25D366;
+  --whatsapp-hover: #1EBE5D;
 
-  /* Typography Colors */
-  --text-pure: #ffffff;
-  --text-main: #e8eaee;
-  --text-muted: #9aa1b3;
-  --text-gold: #edd78c;
+  /* Typography Colors - Crisp & High Contrast */
+  --text-pure: #FFFFFF;          /* Ultra Crisp White */
+  --text-main: #E2E8F0;          /* Clean Bright Slate */
+  --text-muted: #94A3B8;         /* Clear Silver Muted */
+  --text-gold: #FFD54F;
 
-  /* Fonts */
-  --font-serif: 'Playfair Display', Georgia, serif;
+  /* Clean, Sharp Modern Fonts */
+  --font-serif: 'Playfair Display', serif;
   --font-display: 'Cinzel', serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
   /* Transitions & Spacing */
-  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   --radius-sm: 8px;
   --radius-md: 14px;
-  --radius-lg: 22px;
+  --radius-lg: 20px;
   --radius-full: 9999px;
-  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
-  --shadow-gold: 0 12px 35px -8px rgba(212, 175, 55, 0.28);
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px rgba(255, 107, 0, 0.25);
 }
 
 /* Base & Reset */
@@ -58,13 +63,13 @@ html {
   color: var(--text-main);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   overflow-x: hidden;
   line-height: 1.6;
-  padding-bottom: 75px; /* Space for mobile sticky bottom bar */
+  background: linear-gradient(180deg, #0B0E14 0%, #0F141E 50%, #0B0E14 100%);
+  padding-bottom: 75px;
 }
 
 @media (min-width: 992px) {
@@ -105,13 +110,21 @@ button, input, select, textarea {
   display: inline-block;
 }
 
+.festive-gradient-text {
+  background: var(--festive-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .section-tagline {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 0.85rem;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--gold-primary);
-  margin-bottom: 8px;
+  color: var(--festive-orange);
+  font-weight: 700;
+  margin-bottom: 10px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -121,24 +134,24 @@ button, input, select, textarea {
 .section-tagline::after {
   content: '';
   width: 24px;
-  height: 1px;
-  background: var(--gold-primary);
-  opacity: 0.6;
+  height: 2px;
+  background: var(--festive-orange);
+  border-radius: 2px;
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-size: 2.1rem;
-  font-weight: 700;
+  font-family: var(--font-sans);
+  font-size: 2.2rem;
+  font-weight: 800;
   color: var(--text-pure);
   line-height: 1.25;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .section-subtitle {
   color: var(--text-muted);
-  font-size: 1rem;
-  max-width: 640px;
+  font-size: 1.05rem;
+  max-width: 650px;
   margin: 0 auto;
 }
 
@@ -153,27 +166,29 @@ button, input, select, textarea {
    Announcement Bar & Header
    ========================================================================== */
 .announcement-bar {
-  background: linear-gradient(90deg, #12141c 0%, #1f1b10 50%, #12141c 100%);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  background: linear-gradient(90deg, #E11D48 0%, #FF6B00 50%, #FFB800 100%);
   text-align: center;
   padding: 8px 16px;
-  font-size: 0.8rem;
-  color: var(--gold-light);
-  letter-spacing: 0.5px;
+  font-size: 0.82rem;
+  color: #FFFFFF;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(225, 29, 72, 0.3);
 }
 
 .announcement-bar strong {
-  color: #fff;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(9, 10, 15, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(11, 14, 20, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: var(--transition-smooth);
 }
 
@@ -191,19 +206,19 @@ button, input, select, textarea {
 
 .brand-title {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 800;
   letter-spacing: 2px;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 1.1;
 }
 
 .brand-subtitle {
-  font-size: 0.65rem;
-  letter-spacing: 3.5px;
-  color: var(--gold-primary);
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  color: var(--gold-light);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .nav-desktop {
@@ -214,15 +229,15 @@ button, input, select, textarea {
   .nav-desktop {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 28px;
   }
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-main);
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
   position: relative;
   padding: 6px 0;
 }
@@ -238,7 +253,7 @@ button, input, select, textarea {
   left: 0;
   width: 0%;
   height: 2px;
-  background: var(--gold-primary);
+  background: var(--gold-gradient);
   transition: var(--transition-smooth);
 }
 
@@ -256,20 +271,21 @@ button, input, select, textarea {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(37, 211, 102, 0.12);
-  border: 1px solid rgba(37, 211, 102, 0.35);
-  color: #25d366;
-  padding: 8px 16px;
+  background: rgba(37, 211, 102, 0.15);
+  border: 1.5px solid var(--whatsapp-green);
+  color: #25D366;
+  padding: 8px 18px;
   border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 700;
   transition: var(--transition-smooth);
 }
 
 .btn-header-wa:hover {
   background: var(--whatsapp-green);
-  color: #000;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+  color: #000000;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  transform: translateY(-1px);
 }
 
 .mobile-menu-btn {
@@ -307,16 +323,16 @@ button, input, select, textarea {
   top: 74px;
   left: 0;
   width: 100%;
-  background: rgba(14, 16, 23, 0.98);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-gold);
+  background: #111622;
+  border-bottom: 2px solid var(--border-gold);
   padding: 24px 20px 30px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   transform: translateY(-120%);
   transition: transform 0.4s ease;
   z-index: 99;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .mobile-drawer.active {
@@ -324,15 +340,22 @@ button, input, select, textarea {
 }
 
 .drawer-link {
-  font-size: 1.1rem;
-  font-family: var(--font-display);
-  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #FFFFFF;
   padding: 10px 0;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.drawer-link i {
+  color: var(--festive-orange);
 }
 
 .drawer-link:hover {
-  color: var(--gold-primary);
+  color: var(--gold-light);
 }
 
 /* ==========================================================================
@@ -361,7 +384,7 @@ button, input, select, textarea {
   height: 100%;
   object-fit: cover;
   object-position: center 25%;
-  filter: brightness(0.42) contrast(1.08);
+  filter: brightness(0.55) contrast(1.1) saturate(1.2);
 }
 
 .hero-overlay {
@@ -370,13 +393,13 @@ button, input, select, textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(9, 10, 15, 0.4) 0%, rgba(9, 10, 15, 0.95) 100%),
-              linear-gradient(180deg, rgba(9, 10, 15, 0.2) 0%, #090a0f 100%);
+  background: radial-gradient(circle at center, rgba(11, 14, 20, 0.4) 0%, rgba(11, 14, 20, 0.88) 100%),
+              linear-gradient(180deg, transparent 0%, #0B0E14 100%);
   z-index: -1;
 }
 
 .hero-content {
-  max-width: 780px;
+  max-width: 800px;
   text-align: center;
   margin: 0 auto;
 }
@@ -385,32 +408,34 @@ button, input, select, textarea {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(212, 175, 55, 0.15);
-  border: 1px solid var(--border-gold);
-  color: var(--gold-light);
-  padding: 7px 18px;
+  background: rgba(225, 29, 72, 0.2);
+  border: 1.5px solid var(--festive-rose);
+  color: #FFFFFF;
+  padding: 8px 20px;
   border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  letter-spacing: 1.5px;
+  font-size: 0.82rem;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+  font-weight: 700;
   margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3);
 }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
-  font-weight: 700;
-  line-height: 1.15;
-  color: #fff;
+  font-family: var(--font-sans);
+  font-size: clamp(2.3rem, 5.6vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.18;
+  color: #FFFFFF;
   margin-bottom: 20px;
 }
 
 .hero-description {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  color: #cacedb;
-  margin-bottom: 34px;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: #E2E8F0;
+  margin-bottom: 36px;
   font-weight: 400;
-  max-width: 660px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -425,45 +450,45 @@ button, input, select, textarea {
 }
 
 .btn-primary {
-  background: var(--gold-gradient);
-  color: #0d0e14;
+  background: var(--festive-gradient);
+  color: #FFFFFF;
   font-weight: 700;
-  padding: 14px 30px;
+  padding: 15px 32px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  box-shadow: var(--shadow-gold);
+  font-size: 0.98rem;
   border: none;
   cursor: pointer;
+  box-shadow: 0 10px 25px rgba(225, 29, 72, 0.4);
   transition: var(--transition-smooth);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px -6px rgba(212, 175, 55, 0.45);
+  box-shadow: 0 14px 30px rgba(225, 29, 72, 0.6);
+  filter: brightness(1.1);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-gold);
-  color: #fff;
-  font-weight: 600;
-  padding: 13px 26px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid var(--gold-primary);
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 14px 28px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.95rem;
-  backdrop-filter: blur(8px);
+  font-size: 0.98rem;
+  backdrop-filter: blur(10px);
   cursor: pointer;
   transition: var(--transition-smooth);
 }
 
 .btn-secondary:hover {
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(255, 184, 0, 0.2);
   color: var(--gold-light);
   transform: translateY(-2px);
 }
@@ -482,26 +507,27 @@ button, input, select, textarea {
 }
 
 .highlight-box {
-  background: rgba(21, 24, 36, 0.65);
-  border: 1px solid var(--border-subtle);
+  background: rgba(24, 32, 48, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
-  padding: 14px;
-  backdrop-filter: blur(8px);
+  padding: 16px;
+  backdrop-filter: blur(10px);
 }
 
 .highlight-number {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--gold-light);
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold-primary);
   display: block;
 }
 
 .highlight-label {
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -537,18 +563,20 @@ button, input, select, textarea {
 
 .service-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-card);
 }
 
 .service-card:hover {
   transform: translateY(-6px);
   border-color: var(--border-gold);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+  background: var(--bg-card-hover);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
 .service-img-wrapper {
@@ -561,7 +589,7 @@ button, input, select, textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.5s ease;
 }
 
 .service-card:hover .service-img-wrapper img {
@@ -572,15 +600,16 @@ button, input, select, textarea {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(9, 10, 15, 0.82);
-  border: 1px solid var(--border-gold);
-  color: var(--gold-light);
+  background: rgba(225, 29, 72, 0.9);
+  color: #FFFFFF;
   font-size: 0.72rem;
-  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  padding: 4px 12px;
+  padding: 5px 12px;
   border-radius: var(--radius-full);
   backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .service-content {
@@ -591,15 +620,15 @@ button, input, select, textarea {
 }
 
 .service-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   font-weight: 700;
-  color: #fff;
+  color: #FFFFFF;
   margin-bottom: 8px;
 }
 
 .service-desc {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   line-height: 1.55;
   margin-bottom: 16px;
@@ -608,7 +637,7 @@ button, input, select, textarea {
 .service-features-list {
   list-style: none;
   margin-top: auto;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 14px;
   display: flex;
   flex-direction: column;
@@ -616,7 +645,7 @@ button, input, select, textarea {
 }
 
 .service-features-list li {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--text-main);
   display: flex;
   align-items: center;
@@ -624,17 +653,17 @@ button, input, select, textarea {
 }
 
 .service-features-list li i {
-  color: var(--gold-primary);
-  font-size: 0.8rem;
+  color: var(--festive-orange);
+  font-size: 0.85rem;
 }
 
 /* ==========================================================================
    Official Photography Plans (Directly From PDF)
    ========================================================================== */
 .pricing-section {
-  background: linear-gradient(180deg, #090a0f 0%, #0d0f17 50%, #090a0f 100%);
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
+  background: #0E131E;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .plans-grid {
@@ -658,7 +687,7 @@ button, input, select, textarea {
 
 .plan-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   padding: 30px 22px;
   display: flex;
@@ -669,51 +698,52 @@ button, input, select, textarea {
 
 .plan-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.8);
+  border-color: var(--border-gold);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
 .plan-card.featured {
-  background: linear-gradient(180deg, #181c2b 0%, #131622 100%);
-  border: 2px solid var(--border-gold-strong);
-  box-shadow: 0 15px 40px -10px rgba(212, 175, 55, 0.28);
+  background: #1C2638;
+  border: 2px solid var(--border-gold);
+  box-shadow: 0 15px 35px rgba(255, 184, 0, 0.2);
 }
 
 .plan-ribbon {
   position: absolute;
   top: -12px;
   right: 20px;
-  background: var(--gold-gradient);
-  color: #000;
-  font-weight: 700;
+  background: var(--festive-gradient);
+  color: #FFFFFF;
+  font-weight: 800;
   font-size: 0.72rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 4px 14px;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.4);
 }
 
 .plan-header {
   margin-bottom: 18px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding-bottom: 18px;
 }
 
 .plan-category-badge {
   display: inline-block;
-  font-size: 0.72rem;
-  color: var(--gold-light);
-  letter-spacing: 1.5px;
+  font-size: 0.74rem;
+  color: var(--festive-orange);
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .plan-name {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #FFFFFF;
   margin-bottom: 8px;
   line-height: 1.2;
 }
@@ -726,10 +756,10 @@ button, input, select, textarea {
 }
 
 .plan-price {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 2.1rem;
-  font-weight: 700;
-  color: var(--gold-light);
+  font-weight: 800;
+  color: var(--gold-primary);
 }
 
 .plan-price-label {
@@ -738,7 +768,7 @@ button, input, select, textarea {
 }
 
 .plan-summary {
-  font-size: 0.85rem;
+  font-size: 0.86rem;
   color: var(--text-muted);
   line-height: 1.5;
   margin-bottom: 20px;
@@ -756,8 +786,8 @@ button, input, select, textarea {
 .feature-group-title {
   font-size: 0.76rem;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--gold-primary);
+  letter-spacing: 1px;
+  color: var(--festive-orange);
   margin-bottom: 6px;
   font-weight: 700;
   display: flex;
@@ -782,8 +812,8 @@ button, input, select, textarea {
 }
 
 .feature-items-list li i {
-  color: #22c55e;
-  font-size: 0.8rem;
+  color: var(--emerald-accent);
+  font-size: 0.85rem;
   margin-top: 3px;
   flex-shrink: 0;
 }
@@ -797,8 +827,8 @@ button, input, select, textarea {
 
 .btn-plan-wa {
   background: var(--whatsapp-green);
-  color: #090a0f;
-  font-weight: 700;
+  color: #000000;
+  font-weight: 800;
   font-size: 0.88rem;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
@@ -807,12 +837,14 @@ button, input, select, textarea {
   justify-content: center;
   gap: 8px;
   text-align: center;
+  border: none;
+  cursor: pointer;
   transition: var(--transition-smooth);
 }
 
 .btn-plan-wa:hover {
-  background: #2fe773;
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  background: var(--whatsapp-hover);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
 }
 
 .btn-plan-email {
@@ -827,12 +859,13 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  cursor: pointer;
   transition: var(--transition-smooth);
 }
 
 .btn-plan-email:hover {
-  background: rgba(212, 175, 55, 0.12);
-  color: #fff;
+  background: rgba(255, 184, 0, 0.15);
+  color: #FFFFFF;
 }
 
 /* ==========================================================================
@@ -840,7 +873,7 @@ button, input, select, textarea {
    ========================================================================== */
 .matrix-wrapper {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   overflow-x: auto;
   margin-top: 50px;
@@ -859,40 +892,36 @@ button, input, select, textarea {
 .comparison-table th, 
 .comparison-table td {
   padding: 16px 20px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .comparison-table th {
-  background: #0d0f17;
-  font-family: var(--font-display);
+  background: #111622;
+  font-family: var(--font-sans);
   font-weight: 700;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 0.95rem;
 }
 
 .comparison-table th.col-diamond {
-  background: rgba(212, 175, 55, 0.12);
-  color: var(--gold-light);
+  background: rgba(255, 184, 0, 0.15);
+  color: var(--gold-primary);
   border-left: 1px solid var(--border-gold);
   border-right: 1px solid var(--border-gold);
 }
 
 .comparison-table td.col-diamond {
-  background: rgba(212, 175, 55, 0.04);
-  border-left: 1px solid rgba(212, 175, 55, 0.2);
-  border-right: 1px solid rgba(212, 175, 55, 0.2);
+  background: rgba(255, 184, 0, 0.05);
+  border-left: 1px solid rgba(255, 184, 0, 0.2);
+  border-right: 1px solid rgba(255, 184, 0, 0.2);
 }
 
 .comparison-table tr:hover td {
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.comparison-table tr:hover td.col-diamond {
-  background: rgba(212, 175, 55, 0.08);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .tag-check {
-  color: #22c55e;
+  color: var(--emerald-accent);
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -900,7 +929,7 @@ button, input, select, textarea {
 }
 
 .tag-dash {
-  color: #555b6e;
+  color: #64748B;
 }
 
 /* ==========================================================================
@@ -920,7 +949,7 @@ button, input, select, textarea {
 
 .deliverable-item {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
   padding: 24px;
   text-align: center;
@@ -935,21 +964,22 @@ button, input, select, textarea {
 .deliverable-icon {
   width: 56px;
   height: 56px;
-  background: rgba(212, 175, 55, 0.12);
-  border: 1px solid var(--border-gold);
+  background: rgba(255, 107, 0, 0.15);
+  border: 1px solid var(--festive-orange);
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold-light);
+  color: var(--festive-orange);
   font-size: 1.4rem;
   margin-bottom: 16px;
 }
 
 .deliverable-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.1rem;
-  color: #fff;
+  font-weight: 700;
+  color: #FFFFFF;
   margin-bottom: 8px;
 }
 
@@ -972,21 +1002,22 @@ button, input, select, textarea {
 
 .filter-btn {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-muted);
   padding: 8px 18px;
   border-radius: var(--radius-full);
   font-size: 0.84rem;
+  font-weight: 600;
   cursor: pointer;
   transition: var(--transition-smooth);
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--gold-gradient);
-  color: #000;
-  font-weight: 600;
+  background: var(--festive-gradient);
+  color: #FFFFFF;
   border-color: transparent;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.4);
 }
 
 .gallery-masonry {
@@ -1031,7 +1062,7 @@ button, input, select, textarea {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, transparent 0%, rgba(9, 10, 15, 0.9) 80%);
+  background: linear-gradient(180deg, transparent 0%, rgba(11, 14, 20, 0.9) 80%);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -1043,15 +1074,16 @@ button, input, select, textarea {
 .gallery-tag {
   font-size: 0.72rem;
   color: var(--gold-light);
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .gallery-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.05rem;
-  color: #fff;
-  font-weight: 600;
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 /* Lightbox Modal */
@@ -1094,7 +1126,7 @@ button, input, select, textarea {
   right: 0;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -1103,13 +1135,13 @@ button, input, select, textarea {
    Booking & Custom Inquiry Section
    ========================================================================== */
 .booking-box {
-  background: linear-gradient(135deg, #151824 0%, #1b1e2c 100%);
-  border: 1px solid var(--border-gold);
+  background: var(--bg-card);
+  border: 1.5px solid var(--festive-orange);
   border-radius: var(--radius-lg);
   padding: 40px 24px;
   max-width: 860px;
   margin: 0 auto;
-  box-shadow: var(--shadow-gold);
+  box-shadow: 0 10px 30px rgba(255, 107, 0, 0.15);
 }
 
 .inquiry-form {
@@ -1139,14 +1171,15 @@ button, input, select, textarea {
   font-size: 0.8rem;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
+  font-weight: 700;
 }
 
 .form-input, .form-select, .form-textarea {
-  background: #0d0f17;
-  border: 1px solid var(--border-subtle);
+  background: #111622;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-sm);
-  color: #fff;
+  color: #FFFFFF;
   padding: 12px 14px;
   font-size: 0.92rem;
   outline: none;
@@ -1154,8 +1187,8 @@ button, input, select, textarea {
 }
 
 .form-input:focus, .form-select:focus, .form-textarea:focus {
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
+  border-color: var(--festive-orange);
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.3);
 }
 
 .inquiry-actions {
@@ -1189,7 +1222,7 @@ button, input, select, textarea {
 
 .contact-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
   padding: 28px 20px;
   text-align: center;
@@ -1202,15 +1235,16 @@ button, input, select, textarea {
 
 .contact-card i {
   font-size: 1.8rem;
-  color: var(--gold-primary);
+  color: var(--festive-orange);
   margin-bottom: 14px;
   display: inline-block;
 }
 
 .contact-card h4 {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.1rem;
-  color: #fff;
+  font-weight: 700;
+  color: #FFFFFF;
   margin-bottom: 8px;
 }
 
@@ -1222,7 +1256,7 @@ button, input, select, textarea {
 
 .contact-card a {
   color: var(--gold-light);
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   margin-top: 6px;
 }
@@ -1233,7 +1267,7 @@ button, input, select, textarea {
 
 /* Editable Instructions Banner for Studio Owner */
 .edit-banner {
-  background: rgba(212, 175, 55, 0.08);
+  background: rgba(255, 184, 0, 0.1);
   border: 1px dashed var(--border-gold);
   border-radius: var(--radius-md);
   padding: 16px 20px;
@@ -1244,7 +1278,7 @@ button, input, select, textarea {
 }
 
 .edit-banner code {
-  background: #0d0f17;
+  background: #111622;
   color: var(--gold-light);
   padding: 2px 8px;
   border-radius: 4px;
@@ -1255,8 +1289,8 @@ button, input, select, textarea {
    Footer
    ========================================================================== */
 .footer {
-  background: #06070a;
-  border-top: 1px solid var(--border-subtle);
+  background: #07090D;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 50px 0 30px;
   text-align: center;
   font-size: 0.85rem;
@@ -1266,7 +1300,7 @@ button, input, select, textarea {
 .footer-brand {
   font-family: var(--font-display);
   font-size: 1.4rem;
-  color: #fff;
+  color: #FFFFFF;
   margin-bottom: 8px;
 }
 
@@ -1291,10 +1325,10 @@ button, input, select, textarea {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(14, 16, 23, 0.95);
+  background: rgba(11, 14, 20, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid var(--border-gold);
+  border-top: 1.5px solid var(--festive-orange);
   padding: 10px 14px;
   display: flex;
   align-items: center;
@@ -1311,8 +1345,8 @@ button, input, select, textarea {
 .bar-btn-wa {
   flex: 2;
   background: var(--whatsapp-green);
-  color: #000;
-  font-weight: 700;
+  color: #000000;
+  font-weight: 800;
   font-size: 0.9rem;
   padding: 11px 16px;
   border-radius: var(--radius-full);
@@ -1326,9 +1360,9 @@ button, input, select, textarea {
 .bar-btn-call {
   flex: 1;
   background: var(--bg-card);
-  border: 1px solid var(--border-gold);
-  color: #fff;
-  font-weight: 600;
+  border: 1px solid var(--festive-orange);
+  color: #FFFFFF;
+  font-weight: 700;
   font-size: 0.85rem;
   padding: 11px 12px;
   border-radius: var(--radius-full);
