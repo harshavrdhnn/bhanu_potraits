@@ -30,7 +30,7 @@ const STUDIO_CONFIG = {
 
   // Social Media Links (leave empty "" or replace with your actual profiles)
   social: {
-    instagram: "https://instagram.com/bhanuportraits",
+    instagram: "https://instagram.com/portraits_by_bhanu",
     youtube: "https://youtube.com/@bhanuportraits",
     facebook: "https://facebook.com/bhanuportraits"
   },

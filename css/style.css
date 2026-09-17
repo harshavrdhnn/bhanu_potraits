@@ -307,35 +307,43 @@ button, input, select, textarea {
   gap: 10px;
 }
 
-/* Header WhatsApp button: Hide text on small mobile to prevent squishing */
-.btn-header-wa {
+.btn-header-social {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.btn-header-wa {
   background: rgba(37, 211, 102, 0.12);
   border: 1px solid rgba(37, 211, 102, 0.45);
   color: #25D366;
-  padding: 7px 14px;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: var(--transition-smooth);
-}
-
-@media (max-width: 480px) {
-  .btn-header-wa span {
-    display: none; /* Icon-only on small mobile screens */
-  }
-  .btn-header-wa {
-    padding: 8px 10px;
-  }
 }
 
 .btn-header-wa:hover {
   background: var(--whatsapp-green);
   color: #000000;
   box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-header-insta {
+  background: rgba(225, 48, 108, 0.12);
+  border: 1px solid rgba(225, 48, 108, 0.45);
+  color: #FF5A87;
+}
+
+.btn-header-insta:hover {
+  background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 4px 16px rgba(225, 48, 108, 0.45);
+  transform: translateY(-2px);
 }
 
 .mobile-menu-btn {
@@ -1547,6 +1555,26 @@ button, input, select, textarea {
   justify-content: center;
   gap: 8px;
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+}
+
+.bar-btn-insta {
+  width: 44px;
+  height: 44px;
+  background: rgba(225, 48, 108, 0.15);
+  border: 1px solid rgba(225, 48, 108, 0.5);
+  color: #FF5A87;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+
+.bar-btn-insta:hover {
+  background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  color: #FFFFFF;
 }
 
 .bar-btn-call {
