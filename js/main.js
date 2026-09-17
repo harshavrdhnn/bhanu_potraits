@@ -56,7 +56,9 @@ function initDynamicConfig() {
   document.querySelectorAll('[data-action="call-direct"]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      window.location.href = `tel:+${STUDIO_CONFIG.whatsappNumber}`;
+      let num = String(STUDIO_CONFIG.whatsappNumber || '').replace(/[^0-9]/g, '');
+      if (num.length === 10) num = '91' + num;
+      window.location.href = `tel:+${num}`;
     });
   });
 }

@@ -193,8 +193,10 @@ const STUDIO_CONFIG = {
 
 // Helper function to build custom WhatsApp link
 function getWhatsAppUrl(customMessage) {
+  let num = String(STUDIO_CONFIG.whatsappNumber || '').replace(/[^0-9]/g, '');
+  if (num.length === 10) num = '91' + num;
   const text = encodeURIComponent(customMessage || `Hello ${STUDIO_CONFIG.studioName}! I would like to inquire about wedding photography packages.`);
-  return `https://wa.me/${STUDIO_CONFIG.whatsappNumber}?text=${text}`;
+  return `https://wa.me/${num}?text=${text}`;
 }
 
 // Helper function to build custom Mailto link
