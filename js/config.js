@@ -11,22 +11,22 @@ const STUDIO_CONFIG = {
   studioName: "BHANU PORTRAITS",
   tagline: "Timeless Wedding, Candid & Cinematic Photography",
   cityState: "Hyderabad & Andhra Pradesh, India", // Change to your studio city/coverage
-  
+
   // ==========================================
   // UPDATE YOUR CONTACT NUMBERS HERE
   // ==========================================
   // WhatsApp Number: Enter with Country Code (e.g. 91 for India, NO plus sign, NO spaces)
   // Example: "919876543210"
-  whatsappNumber: "919876543210", 
+  whatsappNumber: "8978608800",
 
   // Display Phone Number (shown as readable text on website)
-  displayPhone: "+91 98765 43210",
+  displayPhone: "+91 89786 08800",
 
   // Primary Email Address
   email: "contact@bhanuportraits.com",
 
   // Studio Address / Location
-  address: "Studio 402, Royal Heritage Arcade, Jubilee Hills, Hyderabad, Telangana - 500033",
+  address: "402, Grand world Road, Tirupati, Andhra Pradesh, 517501",
 
   // Social Media Links (leave empty "" or replace with your actual profiles)
   social: {
@@ -48,16 +48,20 @@ const STUDIO_CONFIG = {
       features: [
         { title: "Nalugu Coverage", items: ["Traditional Photo", "Traditional Video"] },
         { title: "Welcoming", items: ["Welcoming Photo & Video Coverage (In Hall Only)"] },
-        { title: "Reception & Muhurtham", items: [
-          "Traditional Photo at Stage (One Still Photo)",
-          "Traditional Video at Stage (One Video Camera 4K)",
-          "Candid Photographer for Couples"
-        ]},
-        { title: "Deliverables", items: [
-          "WhatsApp Invitation – 1",
-          "Marriage Album 02 Sheets 60",
-          "Professional Video Editing"
-        ]}
+        {
+          title: "Reception & Muhurtham", items: [
+            "Traditional Photo at Stage (One Still Photo)",
+            "Traditional Video at Stage (One Video Camera 4K)",
+            "Candid Photographer for Couples"
+          ]
+        },
+        {
+          title: "Deliverables", items: [
+            "WhatsApp Invitation – 1",
+            "Marriage Album 02 Sheets 60",
+            "Professional Video Editing"
+          ]
+        }
       ]
     },
     {
@@ -71,25 +75,31 @@ const STUDIO_CONFIG = {
       features: [
         { title: "Nalugu Coverage", items: ["Traditional Photo", "Traditional Video"] },
         { title: "Welcoming", items: ["Welcoming Photo & Video Coverage (In Hall Only)"] },
-        { title: "Reception & Muhurtham", items: [
-          "Traditional Photo at Stage (One Still Photo)",
-          "Traditional Video at Stage (One Video Camera 4K)",
-          "One Videographer Coverage Entrance & Dining Hall",
-          "Candid Photographer for Couples",
-          "Candid Videographer for Couples",
-          "Promo Teaser Video"
-        ]},
-        { title: "Special Production", items: [
-          "6×8 LED Wall",
-          "Pre or Post Wedding Normal Photo Shoot (Local)"
-        ]},
-        { title: "Deliverables", items: [
-          "WhatsApp Invitation – 1",
-          "Marriage Album with Box 02 Sheets 70",
-          "Pen Drive - 1 (128 GB)",
-          "Photo Frame – 2",
-          "Professional Video Editing"
-        ]}
+        {
+          title: "Reception & Muhurtham", items: [
+            "Traditional Photo at Stage (One Still Photo)",
+            "Traditional Video at Stage (One Video Camera 4K)",
+            "One Videographer Coverage Entrance & Dining Hall",
+            "Candid Photographer for Couples",
+            "Candid Videographer for Couples",
+            "Promo Teaser Video"
+          ]
+        },
+        {
+          title: "Special Production", items: [
+            "6×8 LED Wall",
+            "Pre or Post Wedding Normal Photo Shoot (Local)"
+          ]
+        },
+        {
+          title: "Deliverables", items: [
+            "WhatsApp Invitation – 1",
+            "Marriage Album with Box 02 Sheets 70",
+            "Pen Drive - 1 (128 GB)",
+            "Photo Frame – 2",
+            "Professional Video Editing"
+          ]
+        }
       ]
     },
     {
@@ -104,26 +114,32 @@ const STUDIO_CONFIG = {
         { title: "Mangala Snanam Coverage", items: ["Traditional Photo", "Traditional Video", "Candid Photo"] },
         { title: "Nalugu Snanam Coverage", items: ["Traditional Photo", "Traditional Video"] },
         { title: "Welcoming", items: ["Welcoming Photo & Video Coverage (In Hall Only)"] },
-        { title: "Reception & Muhurtham", items: [
-          "Traditional Photo at Stage (One Still Photo)",
-          "Traditional Video at Stage (One Video Camera 4K)",
-          "One Videographer Coverage Entrance & Dining Hall",
-          "Candid Photographer for Couples",
-          "Candid Videographer for Couples",
-          "Drone Aerial Cinematography",
-          "LED Wall 6×8 (Full Session)"
-        ]},
-        { title: "Cinematic & Special Shoots", items: [
-          "Pre or Post Wedding Song Shoot Cinematic (Local)",
-          "Promo (Only For Candid Video)"
-        ]},
-        { title: "Deliverables", items: [
-          "WhatsApp Invitation – 1",
-          "Marriage Album with Box 03 Sheets 80",
-          "Pen Drive - 1 (64 GB)",
-          "Photo Frame – 2",
-          "Full Cinematic Video Editing"
-        ]}
+        {
+          title: "Reception & Muhurtham", items: [
+            "Traditional Photo at Stage (One Still Photo)",
+            "Traditional Video at Stage (One Video Camera 4K)",
+            "One Videographer Coverage Entrance & Dining Hall",
+            "Candid Photographer for Couples",
+            "Candid Videographer for Couples",
+            "Drone Aerial Cinematography",
+            "LED Wall 6×8 (Full Session)"
+          ]
+        },
+        {
+          title: "Cinematic & Special Shoots", items: [
+            "Pre or Post Wedding Song Shoot Cinematic (Local)",
+            "Promo (Only For Candid Video)"
+          ]
+        },
+        {
+          title: "Deliverables", items: [
+            "WhatsApp Invitation – 1",
+            "Marriage Album with Box 03 Sheets 80",
+            "Pen Drive - 1 (64 GB)",
+            "Photo Frame – 2",
+            "Full Cinematic Video Editing"
+          ]
+        }
       ]
     },
     {
@@ -135,33 +151,41 @@ const STUDIO_CONFIG = {
       highlight: false,
       description: "The ultimate royal wedding documentary package with 100-sheet master album with box, 1TB hard drive archive, full drone, and complete candid coverage.",
       features: [
-        { title: "Mangala Snanam Coverage", items: [
-          "Traditional Photo",
-          "Traditional Video",
-          "Candid Photo",
-          "Candid Video"
-        ]},
+        {
+          title: "Mangala Snanam Coverage", items: [
+            "Traditional Photo",
+            "Traditional Video",
+            "Candid Photo",
+            "Candid Video"
+          ]
+        },
         { title: "Welcoming", items: ["Welcoming Photo & Video Coverage"] },
-        { title: "Reception & Muhurtham", items: [
-          "Traditional Photo at Stage (One Still Photo)",
-          "Traditional Video at Stage (One Video Camera 4K)",
-          "One Videographer Coverage Entrance & Dining Hall",
-          "Candid Photographer for Couples",
-          "Candid Videographer for Couples",
-          "Drone Aerial Cinematography",
-          "LED Wall 6×8 (Full Session)"
-        ]},
-        { title: "Cinematic & Special Shoots", items: [
-          "Pre or Post Wedding Song Shoot Cinematic (Local)",
-          "Promo (Only For Candid Video)"
-        ]},
-        { title: "Deliverables", items: [
-          "WhatsApp Invitation – 1",
-          "Marriage Album with Box 03 Sheets 100",
-          "Hard Disk - 1 (1 TB Master Storage)",
-          "Photo Frame – 2",
-          "Complete Cinema-Grade Video Editing"
-        ]}
+        {
+          title: "Reception & Muhurtham", items: [
+            "Traditional Photo at Stage (One Still Photo)",
+            "Traditional Video at Stage (One Video Camera 4K)",
+            "One Videographer Coverage Entrance & Dining Hall",
+            "Candid Photographer for Couples",
+            "Candid Videographer for Couples",
+            "Drone Aerial Cinematography",
+            "LED Wall 6×8 (Full Session)"
+          ]
+        },
+        {
+          title: "Cinematic & Special Shoots", items: [
+            "Pre or Post Wedding Song Shoot Cinematic (Local)",
+            "Promo (Only For Candid Video)"
+          ]
+        },
+        {
+          title: "Deliverables", items: [
+            "WhatsApp Invitation – 1",
+            "Marriage Album with Box 03 Sheets 100",
+            "Hard Disk - 1 (1 TB Master Storage)",
+            "Photo Frame – 2",
+            "Complete Cinema-Grade Video Editing"
+          ]
+        }
       ]
     }
   ]
