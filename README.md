@@ -12,9 +12,9 @@ A luxury, mobile-first responsive website designed for **BHANU PORTRAITS** photo
    - High-end dark onyx and warm gold aesthetic with `Playfair Display`, `Cinzel`, and `Plus Jakarta Sans` typography.
 
 2. **Official Photography Plans (as specified in Studio Rate Sheet)**:
-   - **Basic Photography Plan** — ₹70,000
-   - **Gold Photography Plan** — ₹1,30,000
-   - **Diamond Photography Plan** — ₹1,80,000 *(Most Popular)*
+   - **Basic Photography Plan** — ₹80,000
+   - **Gold Photography Plan** — ₹1,40,000
+   - **Diamond Photography Plan** — ₹1,90,000 *(Most Popular)*
    - **Platinum Photography Plan** — ₹2,00,000 *(VIP Royal Experience)*
    - Full feature comparison matrix and deliverables breakdown.
 

@@ -40,8 +40,8 @@ const STUDIO_CONFIG = {
     {
       id: "basic",
       name: "Basic Photography Plan",
-      price: 70000,
-      priceFormatted: "₹70,000",
+      price: 80000,
+      priceFormatted: "₹80,000",
       badge: "Essential Ceremony",
       highlight: false,
       description: "Ideal for intimate and traditional celebrations covering key rituals with high quality traditional and candid couple coverage.",
@@ -67,8 +67,8 @@ const STUDIO_CONFIG = {
     {
       id: "gold",
       name: "Gold Photography Plan",
-      price: 130000,
-      priceFormatted: "₹1,30,000",
+      price: 140000,
+      priceFormatted: "₹1,40,000",
       badge: "Comprehensive",
       highlight: false,
       description: "Complete celebration coverage with dual candid team, entrance & dining coverage, LED wall, and local pre/post shoot.",
@@ -105,8 +105,8 @@ const STUDIO_CONFIG = {
     {
       id: "diamond",
       name: "Diamond Photography Plan",
-      price: 180000,
-      priceFormatted: "₹1,80,000",
+      price: 190000,
+      priceFormatted: "₹1,90,000",
       badge: "Most Popular",
       highlight: true,
       description: "Our signature luxury experience with Mangala Snanam candid coverage, Drone aerials, full-session LED wall, and cinematic song shoot.",
