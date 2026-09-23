@@ -15,7 +15,7 @@ A luxury, mobile-first responsive website designed for **BHANU PORTRAITS** photo
    - **Basic Photography Plan** — ₹80,000
    - **Gold Photography Plan** — ₹1,40,000
    - **Diamond Photography Plan** — ₹1,90,000 *(Most Popular)*
-   - **Platinum Photography Plan** — ₹2,00,000 *(VIP Royal Experience)*
+   - **Platinum Photography Plan** — ₹2,10,000 *(VIP Royal Experience)*
    - Full feature comparison matrix and deliverables breakdown.
 
 3. **1-Click WhatsApp & Email Redirections**:

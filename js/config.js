@@ -145,8 +145,8 @@ const STUDIO_CONFIG = {
     {
       id: "platinum",
       name: "Platinum Photography Plan",
-      price: 200000,
-      priceFormatted: "₹2,00,000",
+      price: 210000,
+      priceFormatted: "₹2,10,000",
       badge: "The Royal Experience",
       highlight: false,
       description: "The ultimate royal wedding documentary package with 100-sheet master album with box, 1TB hard drive archive, full drone, and complete candid coverage.",
